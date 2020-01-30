@@ -29,7 +29,7 @@ namespace WeatherCalculator2
 
                 relativeHumidity = int.Parse(input);
 
-                Heatindex = temperature + 61 + ((temperature - 68) * 1.2) + (relativeHumidity * 0.094);
+                Heatindex = (temperature + 61 + ((temperature - 68) * 1.2) + (relativeHumidity * 0.094)) * 0.5;
 
                 Console.WriteLine("The Heat Index is" + Heatindex);
             }
